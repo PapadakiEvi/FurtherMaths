@@ -57,8 +57,7 @@ $$r^2\ (r+1)^2-(r-1)^2\ r^2$$
 b.  **(3 marks)** Use the method of differences to show that $\sum_{r=1}^{n}r^3=\frac{1}{4}n^2(n+1)^2$
 
 ::: {.callout-tip title="Solution" collapse="true" icon="false"}
-**a** 
-\begin{equation*}
+**a** \begin{equation*}
 \begin{split}
 r^2 (r+1)^2-(r-1)^2 r^2 &= r^2 (r^2+2r+1)-(r^2-2r+1)r^2 \\
 &= r^4+2r^3+r^2-(r^4-2r^3+r^2) \\
@@ -66,7 +65,6 @@ r^2 (r+1)^2-(r-1)^2 r^2 &= r^2 (r^2+2r+1)-(r^2-2r+1)r^2 \\
 &= 4r^3 \\
 \end{split}
 \end{equation*}
-
 
 **b** From part a. we can deduce that $$r^3=\frac{1}{4}(r^2 (r+1)^2-(r-1)^2 r^2)$$ Therefore,
 
@@ -90,8 +88,7 @@ $$\frac{2}{(r+2)(r+3)(r+4)}$$
 b.  **(5 marks)** Show that $$\sum_{r=1}^{n}{\frac{2}{(r+2)(r+3)(r+4)}=\frac{n(n+b)}{c(n+3)(n+4)}}$$ where $b$ and $c$ are constants to be found.
 
 ::: {.callout-tip title="Solution" collapse="true" icon="false"}
-**a**
-$$\frac{2}{(r+2)(r+3)(r+4)} = \frac{A}{r+2}+\frac{B}{r+3}+\frac{C}{r+4}$$ for some $A, B, C \in \mathbb{R}$. By multiplying both sides by the common denominator $(r+2)(r+3)(r+4)$, we have $$2=A(r+3)(r+4)+B(r+2)(r+4)+C(r+2)(r+3)$$ For $r=-2$, we get $A=1$, for $r=-3$, $B=-2$ and for $r=-4$, $C=1$.
+**a** $$\frac{2}{(r+2)(r+3)(r+4)} = \frac{A}{r+2}+\frac{B}{r+3}+\frac{C}{r+4}$$ for some $A, B, C \in \mathbb{R}$. By multiplying both sides by the common denominator $(r+2)(r+3)(r+4)$, we have $$2=A(r+3)(r+4)+B(r+2)(r+4)+C(r+2)(r+3)$$ For $r=-2$, we get $A=1$, for $r=-3$, $B=-2$ and for $r=-4$, $C=1$.
 
 $$\therefore \qquad \frac{2}{(r+2)(r+3)(r+4)} = \frac{1}{r+2}-\frac{2}{r+3}+\frac{1}{r+4} $$ {#eq-2a}
 
@@ -139,32 +136,25 @@ c.  **(4 marks)** Use standard results to show that for all real values of $x$
 $$\cosh^{2}{x \geq 1 + x^{2}}$$
 
 ::: {.callout-tip title="Solution" collapse="true" icon="false"}
-**a** First we notice that the requested expression has a factor of $e^2$. Because Maclaurin series approximate $e^t$ as a polynomial series, it means that we need to factorise before applying the standard rule for $e^t$. 
+**a** First we notice that the requested expression has a factor of $e^2$. Because Maclaurin series approximate $e^t$ as a polynomial series, it means that we need to factorise before applying the standard rule for $e^t$.
 
-Using laws of indices, we get 
-$$e^{2-x}=e^2e^{-x}$${#eq-4a}
-Now we apply the standard result for $e^t=\sum_{r=0}^\infty\frac{t^r}{r!}$, $\forall t\in \mathbb{R}$ for $t=-x$ to obtain the first four terms of the series expansion for $e^{-x}$.
-\begin{equation*}
+Using laws of indices, we get $$e^{2-x}=e^2e^{-x}$$ {#eq-4a} Now we apply the standard result for $e^t=\sum_{r=0}^\infty\frac{t^r}{r!}$, $\forall t\in \mathbb{R}$ for $t=-x$ to obtain the first four terms of the series expansion for $e^{-x}$. \begin{equation*}
 \begin{split}
 e^{-x}&=1+(-x)+\frac{(-x)^2}{2!}+\frac{(-x)^3}{3!} \\
 &=1-x+\frac{x^2}{2!}-\frac{x^3}{3!}
 \end{split}
-\end{equation*}
-Thus, from @eq-1a 
-$$e^{2-x}=e^2\left(1-x+\frac{x^2}{2!}-\frac{x^3}{3!}\right)$$
-**b** We use the standard results $\sin t = \sum_{r=0}^\infty (-1)^r \frac{t^{2r+1}}{(2r+1)!}$, $\forall t \in \mathbb{R}$ for $t=3x^2$, to find the first four non-zero terms.
+\end{equation*} Thus, from @eq-1a $$e^{2-x}=e^2\left(1-x+\frac{x^2}{2!}-\frac{x^3}{3!}\right)$$ **b** We use the standard results $\sin t = \sum_{r=0}^\infty (-1)^r \frac{t^{2r+1}}{(2r+1)!}$, $\forall t \in \mathbb{R}$ for $t=3x^2$, to find the first four non-zero terms.
 
 \begin{equation*}
 \begin{split}
 \sin 3x^2 &= 3x^2 - \frac{(3x^2)^3}{3!}+ \frac{(3x^2)^5}{5!}-\frac{(3x^2)^7}{7!} \\
-&=3x^2 -\frac{3^3}{3!}x^6+\frac{3^5}{5!}x^10-\frac{3^7}{7!}x^14 \\
-&=3x^2 -\frac{9}{2}x^6+\frac{81}{40}x^10-\frac{243}{560}x^14
+&=3x^2 -\frac{3^3}{3!}x^6+\frac{3^5}{5!}x^{10}-\frac{3^7}{7!}x^{14} \\
+&=3x^2 -\frac{9}{2}x^6+\frac{81}{40}x^{10}-\frac{243}{560}x^{14}
 \end{split}
 \end{equation*}
 
-**c**  
-$$\cosh x = \frac{1}{2}(e^x+e^{-x})$${#eq-4b}
-We need to consider the standard result for $e^t$.
+**c**\
+$$\cosh x = \frac{1}{2}(e^x+e^{-x})$$ {#eq-4b} We need to consider the standard result for $e^t$.
 
 \begin{equation*}
 \begin{split}
@@ -182,27 +172,19 @@ By substituting this result in @eq-4b, we get
 \cosh x &= \frac{1}{2} \left( 2+2\frac{(x)^2}{2!}+2\frac{(x)^4}{4!}+ \quad ... \right)\\
 &= 1+\frac{(x)^2}{2!}+\textcolor{magenta}{\frac{(x)^4}{4!}+ \quad ...}
 \end{split}
-\end{equation*}
-The residual(you don't need to know how it's called)
-$$\frac{(x)^4}{4!}+ \quad ... \geq 0, \quad \forall x \in \mathbb{R}$$
-as all terms are of even degree with positive coefficients.
+\end{equation*} The residual(you don't need to know how it's called) $$\frac{(x)^4}{4!}+ \quad ... \geq 0, \quad \forall x \in \mathbb{R}$$ as all terms are of even degree with positive coefficients.
 
-Therefore, $$\cosh x \geq1+\frac{x^2}{2}$$
-So, 
-\begin{equation*}
+Therefore, $$\cosh x \geq1+\frac{x^2}{2}$$ So, \begin{equation*}
 \begin{split}
 \cosh^2 x &\geq \left(1+\frac{x^2}{2}\right)^2 \\
 \cosh^2 x &\geq 1+2\frac{x^2}{2}+\frac{x^4}{4} \\
  &\geq 1+x^2
 \end{split}
-\end{equation*}
-as $\frac{x^4}{4}\geq0$, $\forall x \in \mathbb{R}$.
+\end{equation*} as $\frac{x^4}{4}\geq0$, $\forall x \in \mathbb{R}$.
 
-**Alternative method:**
-This method is slightly longer but it requires less planning.
+**Alternative method:** This method is slightly longer but it requires less planning.
 
-First, 
-\begin{equation*}
+First, \begin{equation*}
 \begin{split}
 \cosh^2 x &= \left( \frac{1}{2}(e^x+e^{-x}) \right) ^2 \\
 &= \frac{1}{4}(e^x+e^{-x})^2 \\
@@ -211,12 +193,11 @@ First,
 \end{split}
 \end{equation*}
 
-Thus,
-$$\cosh^2x=\frac{1}{2}+\frac{1}{4}(e^{2x}+e^{-2x})$${#eq-4c}
+Thus, $$\cosh^2x=\frac{1}{2}+\frac{1}{4}(e^{2x}+e^{-2x})$$ {#eq-4c}
 
-Then we need to consider the standard result for $e^t$. 
+Then we need to consider the standard result for $e^t$.
 
-[**Note:** to prove the inequality $\forall x \in \mathbb{R}$ using this method, we need to consider the Maclaurin series of $\cosh^2 x$. An approximation is not enough, because we do not know if the approximation underestimates or overestimates the true values.] 
+\[**Note:** to prove the inequality $\forall x \in \mathbb{R}$ using this method, we need to consider the Maclaurin series of $\cosh^2 x$. An approximation is not enough, because we do not know if the approximation underestimates or overestimates the true values.\]
 
 \begin{equation*}
 \begin{split}
@@ -225,9 +206,7 @@ e^{-2x}&=1+(-2x)+\frac{(-2x)^2}{2!}+\frac{(-2x)^3}{3!}+\frac{(2x)^4}{4!} \quad .
 &=1-2x+\frac{(2x)^2}{2!}-\frac{(2x)^3}{3!}+\frac{(2x)^4}{4!} \quad ... \\
 \therefore \qquad e^{2x}+e^{-2x}&=2+2\frac{(2x)^2}{2!}+2\frac{(2x)^4}{4!}+ \quad ...
 \end{split}
-\end{equation*}
-By substituting this result in @eq-4c, we get
-\begin{equation*}
+\end{equation*} By substituting this result in @eq-4c, we get \begin{equation*}
 \begin{split}
 \cosh ^2 x &=\frac{1}{2}+\frac{1}{4} \left(2+2\frac{(2x)^2}{2!}+2\frac{(2x)^4}{4!}+ \quad ... \right)\\
 &=\frac{1}{2}+\frac{1}{2}+\frac{1}{2}\frac{(2x)^2}{2!}+\frac{1}{2}\frac{(2x)^4}{4!}+ \quad ... \\
@@ -235,9 +214,7 @@ By substituting this result in @eq-4c, we get
 \end{split}
 \end{equation*}
 
-The residual(you don't need to know how it's called)
-$$\frac{2}{3}x^4+ \quad ... \geq 0, \quad \forall x \in \mathbb{R}$$
-as all terms are of even degree with positive coefficients.
+The residual(you don't need to know how it's called) $$\frac{2}{3}x^4+ \quad ... \geq 0, \quad \forall x \in \mathbb{R}$$ as all terms are of even degree with positive coefficients.
 
 Therefore, $$\cosh ^2 x \geq 1+x^2$$
 :::
@@ -253,8 +230,7 @@ c.  **(4 marks)** By choosing a suitable value for $x$, use the expansion from p
 d.  **(2 marks)** Write down the first four terms of the series expansion for $ln{\sqrt{\frac{1+3x}{1-2x}}}$
 
 ::: {.callout-tip title="Solution" collapse="true" icon="false"}
-**a** From the laws of logarithms 
-$$\ln \left( \frac{1+3x}{1-2x}\right) = \ln (1+3x) + \ln (1 -2x)$${#eq-5a}
+**a** From the laws of logarithms $$\ln \left( \frac{1+3x}{1-2x}\right) = \ln (1+3x) + \ln (1 -2x)$$ {#eq-5a}
 
 From the standard result $\ln(1+t) \sum_{r=0}^{\infty}(-1)^{r+1}\frac{t^r}{r}$, for $-1 < t \leq 1$, for $t=3x$ and $t=-2x$ we've got
 
@@ -270,14 +246,11 @@ From the standard result $\ln(1+t) \sum_{r=0}^{\infty}(-1)^{r+1}\frac{t^r}{r}$, 
 
 up to and including $x^4$.
 
-Thus, from @eq-5a
-$$\ln \left( \frac{1+3x}{1-2x}\right) \approx 5x-\frac{5}{2}x^2+\frac{35}{3}x^3-\frac{65}{4}x^4$${#eq-5b}
+Thus, from @eq-5a $$\ln \left( \frac{1+3x}{1-2x}\right) \approx 5x-\frac{5}{2}x^2+\frac{35}{3}x^3-\frac{65}{4}x^4$$ {#eq-5b}
 
-**b** We require the approximation to be valid for both the expansion of $\ln(1+3x)$ and $\ln(1-2x)$. 
-Therefore, @eq-5b is valid for $$-\frac{1}{3} < x \leq -\frac{1}{3}$$
+**b** We require the approximation to be valid for both the expansion of $\ln(1+3x)$ and $\ln(1-2x)$. Therefore, @eq-5b is valid for $$-\frac{1}{3} < x \leq -\frac{1}{3}$$
 
-**c** First we need to find the value of x that satisfies the equality
-\begin{equation*}
+**c** First we need to find the value of x that satisfies the equality \begin{equation*}
 \begin{split}
 \frac{1+3x}{1-2x}&=\frac{1}{2} \\
 2(1+3x) &=1-2x \\
@@ -306,7 +279,6 @@ By substituting $x=-\frac{1}{8}$ in @eq-5b
 & \approx \frac{5}{2}x-\frac{5}{4}x^2+\frac{35}{6}x^3-\frac{65}{8}x^4
 \end{split}
 \end{equation*}
-
 :::
 
 ## Question 6
@@ -324,23 +296,19 @@ $$\int_{\pi/6}^{\pi/2}{\left( \frac{1}{x}\cos^{2}\left( \frac{x}{3} \right) \rig
 ::: {.callout-tip title="Solution" collapse="true" icon="false"}
 **a** To simplify the calculations, we can consider the double angle formula
 
-$$\cos^2 t = \frac{1}{2}(1+\cos 2t)$$
-Using the standard results for the expansion of $\cos t$
-\begin{equation*}
+$$\cos^2 t = \frac{1}{2}(1+\cos 2t)$$ Using the standard results for the expansion of $\cos t$ \begin{equation*}
 \begin{split}
 \cos^2 t &= \frac{1}{2}(1+1-\frac{(2t)^2}{2!}+\frac{(2t)^4}{4!}\quad ...) \\
 &=1-t^2+\frac{1}{3}t^4\quad ...
 \end{split}
 \end{equation*}
 
-By substituting $t=\frac{x}{3}$, we get
-\begin{equation*}
+By substituting $t=\frac{x}{3}$, we get \begin{equation*}
 \begin{split}
 \cos^2 \left(\frac{x}{3}\right) &= 1-\left(\frac{x}{3}\right)^2+\frac{1}{3}\left(\frac{x}{3}\right)^4 \\
 &=1-\frac{x^2}{9}+\frac{x^4}{243}
 \end{split}
-\end{equation*}
-up to and including $x^4$.
+\end{equation*} up to and including $x^4$.
 
 **b** From part a
 
