@@ -1,0 +1,42 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: A-Level Further Maths (Edexcel) - Unit tests 2024-25 model answers
+  author:
+  - name: Evi Papadaki
+    affiliations:
+      - name: Frome College
+  
+  date: 10/02/2024 
+  
+  chapters:
+    - index.qmd
+    - series.qmd
+
+  downloads: [pdf]
+  
+bibliography: references.bib
+
+format: 
+  html:
+    icons: true
+    math: 
+      method: mathjax
+      number-equations: true
+      add-to-equation: section
+      
+    number-sections: false
+    css: custom.css
+    theme: 
+      light: cosmo
+      dark: darkly
+  
+  pdf:
+   documentclass: report
+   papersize: a4
+   keep-tex: true
+   pdf-engine: pdflatex
+
+editor: visual

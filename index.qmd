@@ -1,0 +1,9 @@
+# Index {.unnumbered}
+The booklet is organised by topic. Use the list on the left of your screen to navigate the different chapters.
+
+```{=html}
+You can also switch to dark mode for a more comfortable reading experience by clicking on <i>toggle</i> icon at the top right corner of the screen. To download a PDF version of this booklet, click on the <i>document</i> icon, which can be found in the same menu.
+```
+:::{.callout-tip}
+You can use the *search tool* to look for a specific concept.
+:::
